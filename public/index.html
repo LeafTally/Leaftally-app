@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LeafTally — Nigeria's enterprise accounting platform. FIRS-compliant e-invoicing, double-entry GL, PAYE payroll, inventory, and multi-entity consolidation.">
+  <title>LeafTally ERP</title>
+
+  <!-- Fonts & icons (CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/variables.css">
+  <link rel="stylesheet" href="/assets/components.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       LOGIN
+  ═══════════════════════════════════════════════ -->
+  <!-- Login HTML injected by src/components/Login.js -->
+  <div id="login-mount"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       TC MODAL & TOUR OVERLAY
+  ═══════════════════════════════════════════════ -->
+  <div id="tc-modal-mount"></div>
+  <div id="tour-mount"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       APP SHELL  (hidden until login)
+  ═══════════════════════════════════════════════ -->
+  <div id="app" style="display:none">
+    <!-- Sidebar + main content injected by src/components/Shell.js -->
+    <div id="app-mount"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SCRIPTS  (bundled by Vite)
+  ═══════════════════════════════════════════════ -->
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

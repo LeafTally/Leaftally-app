@@ -1,0 +1,13 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check source file exists
+        run: test -f src/leaftally.html && echo "Source file OK"

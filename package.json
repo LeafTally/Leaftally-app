@@ -1,0 +1,38 @@
+{
+  "name": "leaftally-erp",
+  "version": "1.0.0",
+  "description": "LeafTally — Nigeria's enterprise accounting platform. FIRS-compliant e-invoicing, double-entry GL, PAYE payroll, inventory, multi-entity consolidation.",
+  "author": "LeafTally Technologies Ltd <dev@leaftally.io>",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev":         "vite",
+    "build":       "vite build",
+    "preview":     "vite preview",
+    "build:standalone": "node scripts/build-standalone.js",
+    "lint":        "eslint src/**/*.js",
+    "format":      "prettier --write src/**/*.js public/**/*.html",
+    "test":        "vitest run",
+    "test:watch":  "vitest",
+    "validate":    "node scripts/validate.js"
+  },
+  "dependencies": {
+    "vite": "^5.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^5.4.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "vitest": "^1.6.0",
+    "terser": "^5.31.0"
+  },
+  "keywords": [
+    "erp", "accounting", "nigeria", "firs", "invoicing",
+    "payroll", "inventory", "saas"
+  ]
+}

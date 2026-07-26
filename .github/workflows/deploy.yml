@@ -22,7 +22,7 @@ jobs:
       - name: Prepare site
         run: |
           mkdir -p dist
-          cp src/leaftally.html dist/index.html
+          find . -name "leaftally.html" | head -1 | xargs -I{} cp {} dist/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
